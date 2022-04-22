@@ -1,0 +1,9 @@
+// This is the API File for QR Go Code Generator
+
+API Name: Go QR code
+API Link: https://goqr.me/api/ 
+
+For the link text name: HelloWorld
+
+GET Format: https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100&color=7134ED
+Return: PNG Image 
