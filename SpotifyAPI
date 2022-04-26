@@ -1,1 +1,15 @@
+// This is the API File for Official Spotify API
 
+API Name: Spotify API
+API Link: hhttps://developer.spotify.com/
+
+For the user ID: spotify_userid
+
+We will be extracting the following information about the user:
+
+Get User's Profile: Get public profile information about a Spotify user. 
+
+the public profile contains the public username and 
+
+GET Format: https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100&color=7134ED
+Return: PNG Image 
