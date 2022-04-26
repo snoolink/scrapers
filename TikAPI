@@ -1,1 +1,211 @@
+// This is the API File for TikTok - Unofficial Tiktok API
 
+API Name: tikAPI
+API Link: https://tikapi.io/
+
+For the link tiktok user id, we want to get the following user details:
+
+"followerCount": 7000000,
+"followingCount": 51,
+"heart": 156500000,
+"videoCount": 177,
+
+Most Recent 4 videos posted by the user:
+Video Details include video id, video download link
+
+First GET Request: https://tikapi.io/documentation/#operation/check
+Get a user's profile information
+
+{
+  "status": "success",
+  "message": "string",
+  "seoProps": {
+    "predictedLanguage": "en",
+    "pageId": 6569595380449903000,
+    "pageType": 1,
+    "metaParams": {
+      "title": "lilyachty (@lilyachty) Official TikTok | Watch lilyachty's Newest TikTok Videos",
+      "keywords": "lilyachtylilyachtyTikTok ティックトック tik tok tick tock tic tok tic toc tictok тик ток ticktock",
+      "description": "lilyachty (@lilyachty) on TikTok | 156.5M Likes. 7M Fans. i have all of the answers inside of my head",
+      "canonicalHref": "https://www.tiktok.com/@lilyachty",
+      "robotsContent": "index follow",
+      "applicableDevice": "pc mobile"
+    },
+    "itemList": {},
+    "jsonldList": [
+      [
+        "ItemList"
+      ]
+    ]
+  },
+  "$language": "en",
+  "statusCode": 0,
+  "statusMsg": null,
+  "userInfo": {
+    "user": {
+      "id": 6569595380449903000,
+      "shortId": 0,
+      "uniqueId": "lilyachty",
+      "nickname": "lilyachty",
+      "avatarLarger": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1658838867803142~c5_1080x1080.jpeg?x-expires=1623697200&x-signature=BAtL%2Brwp%2BqOm%2FeB5CiHu96jJMKk%3D",
+      "avatarMedium": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1658838867803142~c5_720x720.jpeg?x-expires=1623697200&x-signature=Zq891nNHwNtHQHoVGgWPK9kYZpM%3D",
+      "avatarThumb": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1658838867803142~c5_100x100.jpeg?x-expires=1623697200&x-signature=eipislASGJ1C8OP4KIJM39nW5nc%3D",
+      "signature": "i have all of the answers inside of my head",
+      "createTime": 1548906000,
+      "verified": true,
+      "secUid": "MS4wLjABAAAAsHntXC3s0AvxcecggxsoVa4eAiT8OVafVZ4OQXxy-9htpnUi0sOYSr0kGGD1Loud",
+      "ftc": true,
+      "relation": 0,
+      "openFavorite": true,
+      "bioLink": {
+        "link": "Crete.co",
+        "risk": 3
+      },
+      "commentSetting": 0,
+      "duetSetting": 0,
+      "stitchSetting": 0,
+      "privateAccount": true,
+      "secret": true,
+      "isADVirtual": true,
+      "roomId": null
+    },
+    "stats": {
+      "followerCount": 7000000,
+      "followingCount": 51,
+      "heart": 156500000,
+      "heartCount": 156500000,
+      "videoCount": 177,
+      "diggCount": 0
+    },
+    "itemList": []
+  }
+}
+
+Second GET Request: https://tikapi.io/documentation/#operation/posts
+Returns following JSON Object
+
+{
+  "status": "success",
+  "message": "string",
+  "statusCode": 0,
+  "itemList": [
+    {
+      "id": 6932268218690145000,
+      "desc": "The way he dives into the ball pit 😂😂😂 TYSM to Sarah and Rock Dodd from NY! 🥰",
+      "createTime": 1614044487,
+      "video": {
+        "id": 6932268218690145000,
+        "height": 1024,
+        "width": 576,
+        "duration": 58,
+        "ratio": "720p",
+        "cover": "https://p16-sign-sg.tiktokcdn.com/tos-maliva-p-0068/7a9f49ac001748bc8c807b74805696a0~tplv-dmt-logom:tos-maliva-p-0000/147eca0bbe4a4320adf3a754500753b6.image?x-expires=1614106800&x-signature=TwoCAwb61y6S5WgzE6qLvqSZ9UI%3D",
+        "originCover": "https://p16-sign-sg.tiktokcdn.com/obj/tos-maliva-p-0068/e66f4a91f7344027a1d810669e9ae36e_1614044489?x-expires=1614106800&x-signature=dcw8cAWMrxpkRQ3VK%2FuQfcpP1f8%3D",
+        "dynamicCover": "https://p16-sign-sg.tiktokcdn.com/obj/tos-maliva-p-0068/50a86c1ff6244894b5d7a7e524265b52_1614044493?x-expires=1614106800&x-signature=WIxlVRaftMgyJgJB8UBKo6r1yOI%3D",
+        "playAddr": "https://v16-web.tiktok.com/video/tos/useast2a/tos-useast2a-pve-0068/5bf7260ddb454770a69af5504005ca8c/?a=1988&br=4138&bt=2069&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&expire=1614107310&l=202102231307320101902092161F0FE04F&lr=tiktok_m&mime_type=video_mp4&pl=0&policy=2&qs=0&rc=M3g3d3E1Ozk4MzMzOjczM0ApOGY6Mzg8OWU5Nzo3ZDs4M2dsa29kc24ybm5gLS1iMTZzc2BfLzUzYjA2L18uMzEtMTE6Yw%3D%3D&signature=7db7b85f595129f501618fc50d7408fe&tk=tt_webid_v2&vl=&vr=",
+        "downloadAddr": "https://v16-web.tiktok.com/video/tos/useast2a/tos-useast2a-pve-0068/5bf7260ddb454770a69af5504005ca8c/?a=1988&br=4138&bt=2069&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&expire=1614107310&l=202102231307320101902092161F0FE04F&lr=tiktok_m&mime_type=video_mp4&pl=0&policy=2&qs=0&rc=M3g3d3E1Ozk4MzMzOjczM0ApOGY6Mzg8OWU5Nzo3ZDs4M2dsa29kc24ybm5gLS1iMTZzc2BfLzUzYjA2L18uMzEtMTE6Yw%3D%3D&signature=7db7b85f595129f501618fc50d7408fe&tk=tt_webid_v2&vl=&vr=",
+        "shareCover": [
+          null
+        ],
+        "reflowCover": "https://p16-sign-sg.tiktokcdn.com/obj/tos-maliva-p-0068/9e209ac43d03422555230402d3f4cf07?x-expires=1614106800&x-signature=GC3FZC2q01W6gzUCx2SgLNkOGA0%3D"
+      },
+      "author": {
+        "id": 6658113054100652000,
+        "uniqueId": "heresyourmonkeycontent",
+        "nickname": "Georgie Boy",
+        "avatarThumb": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1663367077635077~c5_100x100.jpeg?x-expires=1614171600&x-signature=ykouyuQyhAgJhAO%2FkNEIH1AcS50%3D",
+        "avatarMedium": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1663367077635077~c5_720x720.jpeg?x-expires=1614171600&x-signature=Oo9ewQlRjJUH%2BVOPmKyDPAZvIeo%3D",
+        "avatarLarger": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1663367077635077~c5_1080x1080.jpeg?x-expires=1614171600&x-signature=CXugf2YWO%2BJUEtUADeAE2Kj9zmI%3D",
+        "signature": "👆YOUTUBE AND INSTA",
+        "verified": true,
+        "secUid": "MS4wLjABAAAA7CyNvLiT5-wfMyn7_KhW2jJM-QZZMgvDH9UjKnlgd2pCWpyI0PUewJn-f_hLOuMD",
+        "secret": true,
+        "ftc": true,
+        "relation": 1,
+        "openFavorite": true,
+        "commentSetting": 0,
+        "duetSetting": 0,
+        "stitchSetting": 0,
+        "privateAccount": true
+      },
+      "music": {
+        "id": 6932268233760509000,
+        "title": "original sound",
+        "playUrl": "https://sf16-ies-music-va.tiktokcdn.com/obj/musically-maliva-obj/6932268236901731077.mp3",
+        "coverThumb": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1663367077635077~c5_100x100.jpeg?x-expires=1614171600&x-signature=ykouyuQyhAgJhAO%2FkNEIH1AcS50%3D",
+        "coverMedium": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1663367077635077~c5_720x720.jpeg?x-expires=1614171600&x-signature=Oo9ewQlRjJUH%2BVOPmKyDPAZvIeo%3D",
+        "coverLarge": "https://p16-sign-va.tiktokcdn.com/musically-maliva-obj/1663367077635077~c5_1080x1080.jpeg?x-expires=1614171600&x-signature=CXugf2YWO%2BJUEtUADeAE2Kj9zmI%3D",
+        "authorName": "Georgie Boy",
+        "original": true,
+        "duration": 58,
+        "album": null
+      },
+      "challenges": [
+        {
+          "id": 22453,
+          "title": "monkey",
+          "desc": null,
+          "profileThumb": null,
+          "profileMedium": null,
+          "profileLarger": null,
+          "coverThumb": null,
+          "coverMedium": null,
+          "coverLarger": null,
+          "isCommerce": true
+        }
+      ],
+      "stats": {
+        "diggCount": 16000,
+        "shareCount": 612,
+        "commentCount": 393,
+        "playCount": 80200
+      },
+      "duetInfo": {
+        "duetFromId": 0
+      },
+      "originalItem": true,
+      "officalItem": true,
+      "textExtra": [
+        {
+          "awemeId": null,
+          "start": 82,
+          "end": 89,
+          "hashtagName": "monkey",
+          "hashtagId": null,
+          "type": 1,
+          "userId": null,
+          "isCommerce": true,
+          "userUniqueId": null,
+          "secUid": null
+        }
+      ],
+      "secret": true,
+      "forFriend": true,
+      "digged": true,
+      "itemCommentStatus": 0,
+      "showNotPass": true,
+      "vl1": true,
+      "itemMute": true,
+      "authorStats": {
+        "followingCount": 282,
+        "followerCount": 12900000,
+        "heartCount": 142600000,
+        "videoCount": 455,
+        "diggCount": 1443,
+        "heart": 142600000
+      },
+      "privateItem": true,
+      "duetEnabled": true,
+      "stitchEnabled": true,
+      "shareEnabled": true,
+      "stickersOnItem": [
+        {
+          "stickerType": 0
+        }
+      ],
+      "isAd": true
+    }
+  ],
+  "cursor": 1611774375000,
+  "hasMore": true
+}
