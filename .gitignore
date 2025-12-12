@@ -302,3 +302,7 @@ settings.json
 !requirements*.txt
 !setup.py
 !pyproject.toml
+
+*.sh
+lambda-layer/*
+aws/
